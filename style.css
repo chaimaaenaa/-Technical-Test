@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  text-decoration: none;
 }
+/*header*/
 
 header{
   width: 100%;
@@ -13,7 +15,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
+  position: fixed;
 }
 
 
@@ -30,6 +33,7 @@ header button {
 header h2 {
   margin-left: 4%;
 }
+/*section image input button*/
 
 section {
   height: 100vh;
@@ -69,7 +73,11 @@ section .input button{
   border-radius: 4px;
   background-color:  rgb(9, 138, 223);
   color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+  
 }
+/* section cards 3 */
 
 .flex-container {
   display: flex;
@@ -91,6 +99,8 @@ section .input button{
 .flex-container .card img{
   width: 50px;
   height: 50px;
+  transition-property: width, height;
+  transition-duration: 2s;
 }
 
 .img1 {
@@ -104,6 +114,80 @@ section .input button{
 }
 
 footer {
-  background-color: rgba(217, 230, 241, 0.819);
+  width: 100%;
+background-color:white;
+display: flex;
+gap: 20px;
+padding: 50px;
+}
+.contact{
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
 
+}
+
+footer .contact .social img{
+  width: 30px;
+  height: 30px;
+}
+
+footer .contact .social{
+  display: flex;
+  gap: 10px;
+}
+
+footer .dev-link{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+
+}
+footer .dev-link .link2{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+footer .dev-link .link2 img{
+  width: 30px;
+  height: 30px;
+}
+p#copi{
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+}
+a:hover {
+  background-color: rgb(184, 199, 238);
+   }
+
+#bt:hover{
+  background-color: rgb(180, 197, 217);
+  cursor: pointer;
+  transition-duration: 0.4s;
+  
+}
+input:hover{
+  background-color:  rgb(180, 197, 217);
+  border-color: black;
+}
+p:hover{
+  color: black;
+  text-shadow: #2c2e30;
+  text-shadow: 20px;
+  text-decoration-line: overline;
+}
+a{
+  color: #2c2e30;
+}
+#im{
+  width: 40%;
+  height: 40%;
 }
